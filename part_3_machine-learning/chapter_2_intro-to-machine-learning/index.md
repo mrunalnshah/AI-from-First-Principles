@@ -3,7 +3,7 @@ title: "Chapter 2: Introduction to Machine Learning"
 description:  Introduction to Machine Learning? Types of Machine Learning
 date: 2026-10-04
 numbering:
-  enumerator: 1.%s          # Figure 1.1, Equation (1.1), Table 1.1, …
+  enumerator: 2.%s
 ---
 
 

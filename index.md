@@ -1,16 +1,12 @@
 ---
 title: "AI from First Principles"
-# short_title: "Start Here"        # shorter name for the sidebar
-# subtitle: subtitle
 description: Start from here. See what the book is about!
 date: 2026-10-04
 numbering:
-  enumerator: 3.%s                      # Figure 3.1, Equation (3.1), …
+  enumerator: 1	.%s                      # Figure 3.1, Equation (3.1), …
   headings: true                        # also number section headings
 math:
   '\norm': '\left\lVert #1 \right\rVert'    # macro for this page only
-# abbreviations:
-  # SVD: Singular Value Decomposition
 site:
   hide_outline: true                    # any site option, for this page only (no "options:" key here)
 ---
