@@ -1,0 +1,15 @@
+# Build output and environments
+_build/
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+
+# PRIVATE: Excalidraw sources must never reach the public repo
+**/_private/
+*.excalidraw
+*.excalidraw.json
+*.excalidraw.md
+*.excalidrawlib
+
+Tools/

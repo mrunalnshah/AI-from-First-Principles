@@ -1,0 +1,8 @@
+version: 1
+project:
+  toc:
+    - file: index.md
+
+    - file: part_1_intro-to-intelligence/index.md
+      children:
+        - file: part_1_intro-to-intelligence/chapter_1_what-is-intelligence/index.md

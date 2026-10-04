@@ -1,0 +1,37 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+extends:
+  - toc.yml                          # the book structure lives in its own file
+project:
+  id: db6a9a5e-8feb-4baa-94d1-2a08501092dd
+  title: AI from First Principles
+  description: Math, theory and code for AI, from first principles.
+  keywords: [machine learning, deep learning, mathematics]
+  authors:
+    - name: Mrunal Nirajkumar Shah
+  github: https://github.com/mrunalnshah/ai-from-first-principles
+  license:
+    content: CC-BY-4.0                # your text: others may reuse it with credit
+    code: MIT                         # your code
+  exclude:
+    - '**/_private/**'                # never build anything from private folders
+    - '_shared/**'                    # snippets: included in pages, not pages themselves
+  bibliography:
+    - references.bib
+  abbreviations:                      # hover tooltips everywhere in the book
+    ML: Machine Learning
+    HTML: null                        # stops "ML" from matching inside "HTML"
+  math:                               # LaTeX macros for every page (use single quotes)
+    '\R': '\mathbb{R}'
+    '\E': '\mathbb{E}'
+    '\vect': '\mathbf{#1}'
+  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+site:
+  template: book-theme
+  title: Notes on Intelligence
+  options:
+    folders: true                     # URLs follow your folder structure
+    logo: _static/logo.svg
+    logo_dark: _static/logo-dark.svg
+    favicon: _static/favicon.ico
+    style: _static/custom.css
