@@ -28,10 +28,15 @@ project:
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
 site:
   template: book-theme
-  title: Notes on Intelligence
+  title: AI from First Principles
   options:
     folders: true                     # URLs follow your folder structure
     logo: _static/logo.svg
     logo_dark: _static/logo-dark.svg
+    logo_text: AI from First Principles
     favicon: _static/favicon.ico
     style: _static/custom.css
+
+  parts:
+    footer: footer.md
+    primary_sidebar_footer: primary-sidebar-footer.md

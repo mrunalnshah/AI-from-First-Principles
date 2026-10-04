@@ -15,22 +15,37 @@ site:
   hide_outline: true                    # any site option, for this page only (no "options:" key here)
 ---
 
-These notes follow my path from zero math to AI research. Every chapter mixes
-theory, equations, diagrams and runnable code. 
+:::{note}
+These notes document my journey into the fields of AI and mathematics. Each chapter combines theory, equations, diagrams, and runnable code.
 
-I hope you will learn something from this.
+My goal is to learn the foundations of AI from first principles. These are my notes as I learn and work through the process.
+
+I hope you learn something from them too.
+
+\- Mrunal Nirajkumar Shah (\@mrunalnshah)
+:::
 
 **Table of Content:**
 ::::{grid} 1 1 1 1
 
 :::{card} Part 1 · What is Intelligence?
 :link: part_1_intro-to-intelligence/index.md
-What intelligence is, and how machines learn.
+What intelligence is, and how machines learn. (To be published)
+:::
+
+:::{card} Part 2 · Mathematics: Fundamentals of AI
+:link: part_2_math-fundamentals/index.md
+Core of a Linear Regression model is y = wx + b which is a line. Learning Math is important.
+:::
+
+:::{card} Part 3 · Machine Learning
+:link: part_3_machine-learning/index.md
+Learn Machine Learing
 :::
 
 :::{card} New Chapters will be here!
 Wait and I will be back with something more fundamental.
-
 :::
 
 ::::
+

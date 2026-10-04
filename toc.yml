@@ -6,3 +6,12 @@ project:
     - file: part_1_intro-to-intelligence/index.md
       children:
         - file: part_1_intro-to-intelligence/chapter_1_what-is-intelligence/index.md
+
+    - file: part_2_math-fundamentals/index.md
+
+    - file: part_3_machine-learning/index.md
+      children:
+        - file: part_3_machine-learning/chapter_1_what-is-machine-learning/index.md
+        - file: part_3_machine-learning/chapter_2_intro-to-machine-learning/index.md
+
+    - file: references.md
