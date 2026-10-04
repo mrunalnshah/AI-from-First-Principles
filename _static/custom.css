@@ -1,0 +1,273 @@
+/* ==========================================================================
+   custom.css: black-and-white theme with color-coded content
+   For Jupyter Book 2 (MyST book-theme), light and dark mode.
+
+   Where it goes: _static/custom.css
+   myst.yml already loads it with:   site: options: style: _static/custom.css
+
+   Color key                                   light      dark
+   --------------------------------------------------------------
+   Links, current page in the sidebar ...... blue       light blue
+   Inline code ............................. pink       light pink
+   Note, important, see also, exercise ..... cyan       light cyan
+   Tip, hint ............................... green      light green
+   Warning, caution, attention ............. gold       yellow
+   Danger, error ........................... red        light red
+   Theorem, lemma, conjecture .............. violet     light violet
+   Corollary, criterion, property .......... orange     light orange
+   Proof, algorithm, solution .............. gray       light gray
+   Everything else ......................... black on white / white on black
+
+   Every text color has at least 4.5:1 contrast with its background
+   (the WCAG AA standard for readable text), in both themes.
+
+   To change a color, edit its line in section 1 (light) and section 2 (dark).
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Light theme
+   The theme reads these --myst-color-* variables for all its colors.
+   -------------------------------------------------------------------------- */
+html:root {
+  color-scheme: light;
+
+  /* Page and panels */
+  --myst-color-bg: #ffffff;              /* page */
+  --myst-color-bg-secondary: #fafafa;    /* sidebars, table stripes */
+  --myst-color-surface: #f4f4f5;         /* cards, dropdowns, popovers, code chips */
+  --myst-color-surface-hover: #e4e4e7;
+
+  /* Text */
+  --myst-color-text: #0a0a0a;            /* headings and interface */
+  --myst-color-prose-body: #18181b;      /* paragraphs */
+  --myst-color-text-secondary: #3f3f46;  /* captions, quotes */
+  --myst-color-text-tertiary: #52525b;
+
+  /* Lines */
+  --myst-color-border: #e4e4e7;
+  --myst-color-border-strong: #a1a1aa;
+
+  /* Links */
+  --myst-color-link: #1d4ed8;
+  --myst-color-link-hover: #1e40af;
+  --myst-color-link-underline: #93c5fd;
+
+  /* Current page in the sidebar, selected tabs */
+  --myst-color-active: #1d4ed8;
+  --myst-color-active-bg: rgba(0, 0, 0, 0.06);
+  --myst-color-active-surface: #f4f4f5;
+
+  /* Accents stay black and white */
+  --myst-color-accent-text: #0a0a0a;
+  --myst-color-accent-surface: #f4f4f5;
+  --myst-color-accent-surface-border: #d4d4d8;
+  --myst-color-accent-surface-text: #0a0a0a;
+  --myst-color-inverse-bg: #18181b;      /* tooltips */
+  --myst-color-inverse-text: #fafafa;
+
+  /* Inline code */
+  --myst-color-code: #9d174d;
+
+  /* Boxes: border color, title-strip background, title text */
+  --myst-color-info: #0891b2;            /* note, important, see also, exercise */
+  --myst-color-info-bg: #f4f4f5;
+  --myst-color-info-text: #155e75;
+
+  --myst-color-tip: #16a34a;             /* tip, hint */
+  --myst-color-tip-bg: #f4f4f5;
+  --myst-color-tip-text: #166534;
+
+  --myst-color-success: #16a34a;         /* "copied!" and "done" messages */
+  --myst-color-success-bg: #f4f4f5;
+  --myst-color-success-text: #166534;
+
+  --myst-color-warning: #a16207;         /* warning, caution, attention */
+  --myst-color-warning-bg: #f4f4f5;
+  --myst-color-warning-text: #854d0e;
+
+  --myst-color-danger: #dc2626;          /* danger, error */
+  --myst-color-danger-bg: #f4f4f5;
+  --myst-color-danger-text: #b91c1c;
+
+  --myst-color-error: #dc2626;           /* error messages in the interface */
+  --myst-color-error-bg: #fef2f2;
+  --myst-color-error-text: #b91c1c;
+
+  --myst-color-theorem: #7c3aed;         /* theorem, lemma, conjecture */
+  --myst-color-theorem-bg: #f4f4f5;
+  --myst-color-theorem-text: #6d28d9;
+
+  --myst-color-example: #ea580c;         /* corollary, criterion, property */
+  --myst-color-example-bg: #f4f4f5;
+  --myst-color-example-text: #9a3412;
+
+  --myst-color-proof: #737373;           /* proof, algorithm, solution */
+  --myst-color-proof-bg: #f4f4f5;
+  --myst-color-proof-text: #525252;
+}
+
+/* --------------------------------------------------------------------------
+   2. Dark theme (the theme adds class="dark" to <html>)
+   -------------------------------------------------------------------------- */
+html.dark {
+  color-scheme: dark;
+
+  /* Page and panels */
+  --myst-color-bg: #111111;
+  --myst-color-bg-secondary: #161616;
+  --myst-color-surface: #1c1c1c;
+  --myst-color-surface-hover: #2a2a2a;
+
+  /* Text */
+  --myst-color-text: #fafafa;
+  --myst-color-prose-body: #e4e4e7;
+  --myst-color-text-secondary: #d4d4d8;
+  --myst-color-text-tertiary: #a1a1aa;
+
+  /* Lines */
+  --myst-color-border: #2e2e2e;
+  --myst-color-border-strong: #52525b;
+
+  /* Links */
+  --myst-color-link: #93c5fd;
+  --myst-color-link-hover: #bfdbfe;
+  --myst-color-link-underline: #3b82f6;
+
+  /* Current page in the sidebar, selected tabs */
+  --myst-color-active: #93c5fd;
+  --myst-color-active-bg: rgba(255, 255, 255, 0.08);
+  --myst-color-active-surface: #1c1c1c;
+
+  /* Accents stay black and white */
+  --myst-color-accent-text: #fafafa;
+  --myst-color-accent-surface: #1c1c1c;
+  --myst-color-accent-surface-border: #3f3f46;
+  --myst-color-accent-surface-text: #fafafa;
+  --myst-color-inverse-bg: #fafafa;
+  --myst-color-inverse-text: #111111;
+
+  /* Inline code */
+  --myst-color-code: #f9a8d4;
+
+  /* Boxes: border color, title-strip background, title text */
+  --myst-color-info: #22d3ee;
+  --myst-color-info-bg: #1a1a1a;
+  --myst-color-info-text: #67e8f9;
+
+  --myst-color-tip: #22c55e;
+  --myst-color-tip-bg: #1a1a1a;
+  --myst-color-tip-text: #86efac;
+
+  --myst-color-success: #22c55e;
+  --myst-color-success-bg: #1a1a1a;
+  --myst-color-success-text: #86efac;
+
+  --myst-color-warning: #eab308;
+  --myst-color-warning-bg: #1a1a1a;
+  --myst-color-warning-text: #fde047;
+
+  --myst-color-danger: #ef4444;
+  --myst-color-danger-bg: #1a1a1a;
+  --myst-color-danger-text: #fca5a5;
+
+  --myst-color-error: #f87171;
+  --myst-color-error-bg: #1a1a1a;
+  --myst-color-error-text: #fca5a5;
+
+  --myst-color-theorem: #a78bfa;
+  --myst-color-theorem-bg: #1a1a1a;
+  --myst-color-theorem-text: #c4b5fd;
+
+  --myst-color-example: #f97316;
+  --myst-color-example-bg: #1a1a1a;
+  --myst-color-example-text: #fdba74;
+
+  --myst-color-proof: #8a8a8a;
+  --myst-color-proof-bg: #1a1a1a;
+  --myst-color-proof-text: #b5b5b5;
+}
+
+/* --------------------------------------------------------------------------
+   3. Content details: things the color variables don't cover
+   -------------------------------------------------------------------------- */
+
+/* Selected text */
+::selection {
+  background-color: #fde68a;
+  color: #0a0a0a;
+}
+html.dark ::selection {
+  background-color: #a16207;
+  color: #ffffff;
+}
+
+/* Section headings get a thin rule underneath */
+:is(.article, article) h2 {
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--myst-color-border);
+}
+
+/* Inline code: a small gray chip around the pink text */
+:is(.article, article) :not(pre) > code {
+  color: var(--myst-color-code);
+  background-color: var(--myst-color-surface);
+  border: 1px solid var(--myst-color-border);
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+}
+:is(.article, article) a code {
+  color: inherit; /* code inside a link stays link-colored */
+}
+
+/* Tables: gray header, light lines, striped rows */
+:is(.article, article) table {
+  border-collapse: collapse;
+}
+:is(.article, article) :is(th, td) {
+  border: 1px solid var(--myst-color-border);
+  padding: 0.4em 0.75em;
+}
+:is(.article, article) thead th {
+  background-color: var(--myst-color-surface);
+  color: var(--myst-color-text);
+  border-bottom: 2px solid var(--myst-color-border-strong);
+}
+:is(.article, article) tbody tr:nth-child(even) {
+  background-color: var(--myst-color-bg-secondary);
+}
+
+/* Quotes: gray bar, no curly quote marks */
+:is(.article, article) blockquote {
+  border-left: 4px solid var(--myst-color-border-strong);
+  color: var(--myst-color-text-secondary);
+  font-style: normal;
+}
+:is(.article, article) blockquote p::before,
+:is(.article, article) blockquote p::after {
+  content: none;
+}
+
+/* Lines, captions, highlighted text */
+:is(.article, article) hr {
+  border-color: var(--myst-color-border-strong);
+}
+:is(.article, article) figcaption {
+  color: var(--myst-color-text-secondary);
+}
+:is(.article, article) mark {
+  background-color: #fef08a;
+  color: #0a0a0a;
+  padding: 0 0.15em;
+  border-radius: 2px;
+}
+html.dark :is(.article, article) mark {
+  background-color: #854d0e;
+  color: #fefce8;
+}
+
+/* Black-line diagrams (like Excalidraw SVGs with no background) vanish on a
+   dark page. Add  :class: invert-on-dark  to the image or figure to flip its
+   colors in dark mode only. */
+html.dark :is(img.invert-on-dark, .invert-on-dark img) {
+  filter: invert(1) hue-rotate(180deg);
+}
